@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgb(148, 145, 145);
+}
+main{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1{
+    background-color: rgb(246, 246, 248);
+    width: 25%;
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+.dar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20%;
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+.na{
+    margin-right: 15%;
+}
+#dis{
+    /* background-color: red; */
+    height: 4vw;
+    width: 90%;
+    margin-top: 10%;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+}
+input {
+    /* height: 30%; */
+    width: 22vw;
+    background-color: #1E90FF;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 28px;
+    font-weight: 500;
+    display: inline-block; /* Fit content */
+    text-align: end; /* Center text */
+    cursor: pointer; /* Show pointer on hover */
+}
+input:focus{
+    border: none;
+}
+#number{
+    margin-top: 5%;
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 72%;
+    width: 80%;
+}
+.num1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    width: 100%;
+
+}
+
+#but2{
+    background-color: rgb(233, 233, 235);
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 75%;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(252, 252, 254);
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(233, 233, 235);
+    font-size: 16.5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background: #42a5f5;
+}
+
+input:checked + .slider:before {
+    left: calc(100% - 23px);
+}
+
+@media (max-width: 768px) {
+    #page1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    #dis {
+        width: 90%;
+        height: 10vw;
+        margin-top: 18%;
+        margin-bottom: 4%;
+    }
+    
+    input {
+        width: 99%;
+        height: 17vw;
+        font-size: 38px;
+        padding-right: 10%;
+    }
+
+    button {
+        font-size: 30px;
+    }
+    #number{
+        margin-top: 9vw;
+        width: 90%;
+        height: 70%;
+    }
+    .switch {
+        position: relative;
+        width: 16vw;
+        height: 8vw;
+        display: inline-block;
+    }
+    span{
+        font-size: 2px;
+    }
+    .slider:before {
+        content: "";
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        background: white;
+        border-radius: 50%;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        transition: 0.3s;
+    }
+    
+    input:checked + .slider:before {
+        left: calc(100% - 30px);
+    }
+    .dar{
+        padding-right: 24%;
+    }
+    .na{
+        font-size: 25px;
+        font-weight: 400;
+        align-items: center;
+    }
+
+    button:active{
+        background-color: rgb(233, 233, 235);
+        font-size: 25px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+
+}
